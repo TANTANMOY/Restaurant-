@@ -1,3 +1,13 @@
 body{
     background-color: #eef4f7;
 }
+.card{
+box-shadow: 10px 10px 10px #262626;
+}
+.card-img-top {
+   
+    background-color: #17a2b8;
+}
+.col-md-3{
+    padding: 5px;
+}
