@@ -3,6 +3,7 @@ body{
 }
 .card{
 box-shadow: 10px 10px 10px #262626;
+text-decoration: none;
 }
 .card-img-top {
    
