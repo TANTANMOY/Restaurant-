@@ -1,24 +1,20 @@
 $(document).ready(function(){
   var c=[0,0,0],i;
-  $($(".pos")[0]).click(function(){
-    $($(".num")[0]).html(++c[0]);
+  
+  var pos = $(".pos");
+  var neg = $(".neg");
+  pos.each(function(i){
+    $(this).click(function(){
+        $($(".num")[i]).html(++c[i]);
+      });
   });
-  $($(".pos")[1]).click(function(){
-    $($(".num")[1]).html(++c[1]);
+  
+  neg.each(function(i){
+    $(this).click(function(){
+      if(c[i]>0)
+        $($(".num")[i]).html(--c[i]);
+      });
   });
-  $($(".pos")[2]).click(function(){
-    $($(".num")[2]).html(++c[2]);
-  });
-  $($(".neg")[0]).click(function(){
-    if(c[0]>0)
-    $($(".num")[0]).html(--c[0]);
-  });
-  $($(".neg")[1]).click(function(){
-    if(c[1]>0)
-    $($(".num")[1]).html(--c[1]);
-  });
-  $($(".neg")[2]).click(function(){
-    if(c[2]>0)
-    $($(".num")[2]).html(--c[2]);
-  });
+  
+  
 });
