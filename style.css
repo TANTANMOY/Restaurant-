@@ -1,17 +1,25 @@
  #mainNav {
     border-color: transparent;
-    background-color: #00000082;}
+
+}
     .navbar-light .navbar-toggler {
         color: rgb(255, 255, 255);
         border-color: rgba(0,0,0,.1);
     }
 
 @media (max-width: 768px){
-    #mainNav{   
-    background-color: #fff;
-} 
+  
 .navbar-light .navbar-toggler {
-    color: rgba(0,0,0,.5);
-    border-color: rgba(0,0,0,.1);
+    color: rgba(255,255,255,1);
+    border-color: rgba(255,255,255,0.1);
 }
+}
+
+header.masthead{
+    height: 100%;
+}
+.navbar-light .navbar-toggler
+{
+    color: rgba(14, 13, 13, 0.6);
+    border-color: rgba(255,255,255,0.1);
 }
